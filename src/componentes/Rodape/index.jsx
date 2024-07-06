@@ -8,6 +8,7 @@ const RodapeEstilizado = styled.footer`
     justify-content: center;
     border-top: 4px solid #2271D1;
     box-shadow: 3px 0 8px #2271D1;
+    align-items: center;
 `
 
 const Rodape = () => {

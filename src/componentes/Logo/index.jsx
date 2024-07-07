@@ -7,7 +7,7 @@ const LogoEstilizada = styled.img`
 
 const Logo = () => {
     return (
-        <LogoEstilizada src="../../../public/Logo.svg" type="image/svg+xml" alt="AluraFlix Logo"/>
+        <LogoEstilizada src="/public/Logo.svg" type="image/svg+xml" alt="AluraFlix Logo"/>
     )
 }
 

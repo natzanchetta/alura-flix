@@ -1,0 +1,84 @@
+[
+    {
+      "titulo": "Primeiros passos Next.js",
+      "categoria": "FRONT END",
+      "imagem": "/public/logo.svg",
+      "link": "https://www.youtube.com/embed/slmtdlWNwcE?si=WEsbgWhZHObbGO8t",
+      "descricao": "Vem com a gente conhecer mais sobre o Next.JS com o Alura+ \n\n A Vanessa Tonini, Instrutora daqui na Alura,  apresenta o framework NextJS, seu propósito e recursos. Além disso, vemos rapidamente como criar um projeto NextJS, subir no Github e publicar na Vercel. Curtiu? Então, vem com a gente!",
+      "id": "1",
+      "tagId": 1
+    },
+    {
+      "titulo": "Primeiros passos Next.js",
+      "categoria": "FRONT END",
+      "imagem": "/imagens/galeria/foto-1.png",
+      "link": "https://www.youtube.com/embed/slmtdlWNwcE?si=WEsbgWhZHObbGO8t",
+      "descricao": "Vem com a gente conhecer mais sobre o Next.JS com o Alura+ \n\n A Vanessa Tonini, Instrutora daqui na Alura,  apresenta o framework NextJS, seu propósito e recursos. Além disso, vemos rapidamente como criar um projeto NextJS, subir no Github e publicar na Vercel. Curtiu? Então, vem com a gente!",
+      "id": "2",
+      "tagId": 1
+    },
+    {
+      "titulo": "",
+      "categoria": "FRONT END",
+      "imagem": "",
+      "link": "https://www.youtube.com/embed/slmtdlWNwcE?si=WEsbgWhZHObbGO8t",
+      "descricao": "Vem com a gente conhecer mais sobre o Next.JS com o Alura+ \n\n A Vanessa Tonini, Instrutora daqui na Alura,  apresenta o framework NextJS, seu propósito e recursos. Além disso, vemos rapidamente como criar um projeto NextJS, subir no Github e publicar na Vercel. Curtiu? Então, vem com a gente!",
+      "id": "3",
+      "tagId": 1
+    },
+    {
+      "titulo": "",
+      "categoria": "BACK END",
+      "imagem": "",
+      "link": "https://www.youtube.com/embed/slmtdlWNwcE?si=WEsbgWhZHObbGO8t",
+      "descricao": "Vem com a gente conhecer mais sobre o Next.JS com o Alura+ \n\n A Vanessa Tonini, Instrutora daqui na Alura,  apresenta o framework NextJS, seu propósito e recursos. Além disso, vemos rapidamente como criar um projeto NextJS, subir no Github e publicar na Vercel. Curtiu? Então, vem com a gente!",
+      "id": "4",
+      "tagId": 2
+    },
+    {
+      "titulo": "",
+      "categoria": "BACK END",
+      "imagem": "",
+      "link": "https://www.youtube.com/embed/slmtdlWNwcE?si=WEsbgWhZHObbGO8t",
+      "descricao": "Vem com a gente conhecer mais sobre o Next.JS com o Alura+ \n\n A Vanessa Tonini, Instrutora daqui na Alura,  apresenta o framework NextJS, seu propósito e recursos. Além disso, vemos rapidamente como criar um projeto NextJS, subir no Github e publicar na Vercel. Curtiu? Então, vem com a gente!",
+      "id": "5",
+      "tagId": 2
+    },
+    {
+      "titulo": "",
+      "categoria": "BACK END",
+      "imagem": "",
+      "link": "https://www.youtube.com/embed/slmtdlWNwcE?si=WEsbgWhZHObbGO8t",
+      "descricao": "Vem com a gente conhecer mais sobre o Next.JS com o Alura+ \n\n A Vanessa Tonini, Instrutora daqui na Alura,  apresenta o framework NextJS, seu propósito e recursos. Além disso, vemos rapidamente como criar um projeto NextJS, subir no Github e publicar na Vercel. Curtiu? Então, vem com a gente!",
+      "id": "6",
+      "tagId": 2
+    },
+    {
+      "titulo": "",
+      "categoria": "MOBILE",
+      "imagem": "",
+      "link": "https://www.youtube.com/embed/slmtdlWNwcE?si=WEsbgWhZHObbGO8t",
+      "descricao": "Vem com a gente conhecer mais sobre o Next.JS com o Alura+ \n\n A Vanessa Tonini, Instrutora daqui na Alura,  apresenta o framework NextJS, seu propósito e recursos. Além disso, vemos rapidamente como criar um projeto NextJS, subir no Github e publicar na Vercel. Curtiu? Então, vem com a gente!",
+      "id": "7",
+      "tagId": 3
+    },
+    {
+      "titulo": "",
+      "categoria": "MOBILE",
+      "imagem": "",
+      "link": "https://www.youtube.com/embed/slmtdlWNwcE?si=WEsbgWhZHObbGO8t",
+      "descricao": "Vem com a gente conhecer mais sobre o Next.JS com o Alura+ \n\n A Vanessa Tonini, Instrutora daqui na Alura,  apresenta o framework NextJS, seu propósito e recursos. Além disso, vemos rapidamente como criar um projeto NextJS, subir no Github e publicar na Vercel. Curtiu? Então, vem com a gente!",
+      "id": "8",
+      "tagId": 3
+    },
+    {
+      "titulo": "",
+      "categoria": "MOBILE",
+      "imagem": "",
+      "link": "https://www.youtube.com/embed/slmtdlWNwcE?si=WEsbgWhZHObbGO8t",
+      "descricao": "Vem com a gente conhecer mais sobre o Next.JS com o Alura+ \n\n A Vanessa Tonini, Instrutora daqui na Alura,  apresenta o framework NextJS, seu propósito e recursos. Além disso, vemos rapidamente como criar um projeto NextJS, subir no Github e publicar na Vercel. Curtiu? Então, vem com a gente!",
+      "id": "9",
+      "tagId": 3
+    }
+  ]
+  

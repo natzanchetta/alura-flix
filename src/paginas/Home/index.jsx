@@ -1,6 +1,13 @@
+import Acervo from "../../componentes/Acervo"
+import Banner from "../../componentes/Banner"
+
 const Home = () => {
+    
     return (
-        <p>Home</p>
+        <>
+            <Banner />  
+            <Acervo /> 
+        </>
     )       
 }
 

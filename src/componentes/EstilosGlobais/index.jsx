@@ -40,7 +40,8 @@ const EstilosGlobais = createGlobalStyle`
 
     html {
     line-height: 1.15; 
-    -webkit-text-size-adjust: 100%; 
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%; 
     font-family: RobotoRegular;
     }
 
@@ -135,7 +136,7 @@ const EstilosGlobais = createGlobalStyle`
     [type="button"],
     [type="reset"],
     [type="submit"] {
-    -webkit-appearance: button;
+    appearance: button;
     }
 
     button::-moz-focus-inner,
@@ -186,16 +187,16 @@ const EstilosGlobais = createGlobalStyle`
     }
 
     [type="search"] {
-    -webkit-appearance: textfield; 
+    appearance: textfield; 
     outline-offset: -2px; 
     }
 
     [type="search"]::-webkit-search-decoration {
-    -webkit-appearance: none;
+    appearance: none;
     }
 
     ::-webkit-file-upload-button {
-    -webkit-appearance: button; 
+    appearance: button; 
     font: inherit; 
     }
 

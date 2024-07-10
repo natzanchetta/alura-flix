@@ -3,15 +3,19 @@ import Video from "../Video"
 
 const ContainerEstilizado = styled.section`
     background-color: #262626;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
 `
 const ContainerTitulo = styled.div`
-    width: 432px;
+    width: 29vw;
     max-height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-    background-color: ${(props) => props.backgroundColor};
+    background-color: ${(props) => props.cor};
 `
 
 const TituloEstilizado = styled.h3`
@@ -23,13 +27,14 @@ const TituloEstilizado = styled.h3`
 const ContainerVideos = styled.div`
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    justify-content: space-between;
 `
 
-const Categoria = ({ nome, cor, videos = [] }) => {   
+const Categoria = ({ cor, nome, videos }) => { 
+    
     return (
         <ContainerEstilizado>
-            <ContainerTitulo backgroundColor={cor}>
+            <ContainerTitulo cor={cor}>
                <TituloEstilizado>{nome}</TituloEstilizado>
             </ContainerTitulo>
             <ContainerVideos>
@@ -40,7 +45,6 @@ const Categoria = ({ nome, cor, videos = [] }) => {
                         categoria={video.categoria}
                         link={video.link}
                         video={video} 
-                        borderColor={cor}
                     />
                 )}
             </ContainerVideos>

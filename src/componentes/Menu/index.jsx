@@ -22,7 +22,7 @@ const MenuEstilizado = styled.ul`
     align-items: center;
     justify-content: center;
     font-family: SourceSansProBlack;
-  }
+  } 
 
   .active {
     li {

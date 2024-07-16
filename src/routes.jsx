@@ -12,12 +12,12 @@ function AppRoutes() {
         <CategoriasProvider>
         <VideosProvider>
         <EstilosGlobais />
-        <Routes>
-              <Route path="/" element={<PaginaPadrao />}>
-                <Route index element={<Home />} />
-                <Route path="novovideo" element={<NovoVideo />} />
-              </Route>
-        </Routes>
+          <Routes>
+                <Route path="/" element={<PaginaPadrao />}>
+                  <Route index element={<Home />} />
+                  <Route path="novovideo" element={<NovoVideo />} />
+                </Route>
+          </Routes>
         </VideosProvider>
         </CategoriasProvider>
       </BrowserRouter>

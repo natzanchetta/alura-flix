@@ -30,8 +30,8 @@ const ContainerVideos = styled.div`
     justify-content: space-between;
 `
 
-const Categoria = ({ cor, nome, videos }) => { 
-    
+const Categoria = ({ cor, nome, videos, videoSelecionado, aoDeletar }) => { 
+        
     return (
         <ContainerEstilizado>
             <ContainerTitulo cor={cor}>
@@ -44,7 +44,9 @@ const Categoria = ({ cor, nome, videos }) => {
                         titulo={video.titulo}
                         categoria={video.categoria}
                         link={video.link}
-                        video={video} 
+                        video={video}
+                        aoEdicaoSolicitada={videoSelecionado}
+                        aoDeletar={aoDeletar}
                     />
                 )}
             </ContainerVideos>

@@ -1,86 +1,93 @@
 {
+  "categorias": [
+    {
+      "nome": "FRONT END",
+      "cor": "#6BD1FF",
+      "id": "eb0f"
+    },
+    {
+      "nome": "BACK END",
+      "cor": "#00C86F",
+      "id": "4877"
+    },
+    {
+      "nome": "MOBILE",
+      "cor": "#FFBA05",
+      "id": "630c"
+    }
+  ],
   "videos": [
     {
-      "titulo": "Primeiros passos Next.js",
+      "titulo": "O que faz uma desenvolvedora front-end?",
       "categoria": "FRONT END",
-      "imagem": "/Logo.svg",
-      "link": "https://www.youtube.com/slmtdlWNwcE?si=WEsbgWhZHObbGO8t",
-      "descricao": "Vem com a gente conhecer mais sobre o Next.JS com o Alura+ \n\n A Vanessa Tonini, Instrutora daqui na Alura,  apresenta o framework NextJS, seu propósito e recursos. Além disso, vemos rapidamente como criar um projeto NextJS, subir no Github e publicar na Vercel. Curtiu? Então, vem com a gente!",
-      "id": "1",
-      "tagId": 1
+      "imagem": "https://img.youtube.com/vi/ZY3-MFxVdEw/maxresdefault.jpg",
+      "link": "https://www.youtube.com/watch?v=ZY3-MFxVdEw",
+      "descricao": "O que é Front-end? Trabalhando na área os termos HTML, CSS e JavaScript fazem parte da rotina das desenvolvedoras e desenvolvedores. \n \n Mas o que eles fazem, afinal? Descubra com a Vanessa nesse episódio!",
+      "id": "ZY3-MFxVdEw"
     },
     {
-      "titulo": "Primeiros passos Next.js",
+      "titulo": "Desenvolvimento Android",
+      "categoria": "MOBILE",
+      "imagem": "https://img.youtube.com/vi/fWscDFHKgw8/maxresdefault.jpg",
+      "link": "https://www.youtube.com/watch?v=fWscDFHKgw8",
+      "descricao": "Um episódio focado no desenvolvimento de aplicações Android. \n \n Neste bate-papo, Paulo Silveira e Felipe Torres conversam sobre os primeiros passos para começar a desenvolver, quais as principais ferramentas do desenvolvimento mobile, como colocar sua aplicação no ar e mais!",
+      "id": "fWscDFHKgw8"
+    },
+    {
+      "titulo": "Desmistificando Mobile - Por onde eu começo? #01",
+      "categoria": "MOBILE",
+      "imagem": "https://img.youtube.com/vi/2z6f8VN_Pro/maxresdefault.jpg",
+      "link": "https://www.youtube.com/watch?v=2z6f8VN_Pro",
+      "descricao": "A Websérie “Desmistificando o mobile” vêm aí para simplificar com exemplos práticos vários assuntos envolvendo o mundo dos aplicativos de celular e neste primeiro episódio vamos partir, literalmente, do começo, por onde começar a estudar sobre o mundo dos apps? \n \n Os instrutores da escola de mobile da Alura nos ajudam com essa tarefa 😉",
+      "id": "2z6f8VN_Pro"
+    },
+    {
+      "titulo": "Executando código mobile pelo Smartphone",
+      "categoria": "MOBILE",
+      "imagem": "https://img.youtube.com/vi/U885ON-D_G0/maxresdefault.jpg",
+      "link": "https://www.youtube.com/watch?v=U885ON-D_G0",
+      "descricao": "Executar o código de aplicativos no smartphone tem diversas vantagens para Devs Mobile. \n \n Uma delas é exatamente a possibilidade ver exatamente como sua aplicação está funcionando e o resultado final, diferente de apenas emular seu uso. \n \n Mas, você sabe como fazer isso e quais as outras vantagens dessa prática? O Leo Marinho, instrutor aqui da Alura, explica no vídeo. Assiste aí! 😉",
+      "id": "U885ON-D_G0"
+    },
+    {
+      "titulo": "Arquitetura de sistemas com Fabio Akita",
+      "categoria": "BACK END",
+      "imagem": "https://img.youtube.com/vi/oedWxgAZc2A/maxresdefault.jpg",
+      "link": "https://www.youtube.com/watch?v=oedWxgAZc2A",
+      "descricao": "O que temos de cenário e o que devemos estudar em arquitetura de sistemas? 🤨\n\nPaulo Silveira discute com Fabio Akita sobre essas e mais algumas dúvidas sobre esse tema controverso neste #HipstersPontoTube que vale a pena conferir. Bora? ",
+      "id": "oedWxgAZc2A"
+    },
+    {
+      "id": "jpuJ1qrluoU",
+      "titulo": "Orientação a objetos com Roberta Arcoverde",
       "categoria": "FRONT END",
-      "imagem": "/Logo.svg",
-      "link": "https://www.youtube.com/slmtdlWNwcE?si=WEsbgWhZHObbGO8t",
-      "descricao": "Vem com a gente conhecer mais sobre o Next.JS com o Alura+ \n\n A Vanessa Tonini, Instrutora daqui na Alura,  apresenta o framework NextJS, seu propósito e recursos. Além disso, vemos rapidamente como criar um projeto NextJS, subir no Github e publicar na Vercel. Curtiu? Então, vem com a gente!",
-      "id": "2",
-      "tagId": 1
+      "imagem": "https://img.youtube.com/vi/jpuJ1qrluoU/maxresdefault.jpg",
+      "link": "https://www.youtube.com/watch?v=jpuJ1qrluoU",
+      "descricao": "Você acredita que orientação a objetos muda a forma de programar? 🤨\n\nNeste #HipstersPontoTube o host Paulo Silveira bate um papo com a Roberta Arcoverde sobre a utilização de orientação a objeto e suas aplicações."
     },
     {
-      "titulo": "Primeiros passos Next.js",
+      "id": "TUBqH9zVs3M",
+      "titulo": "Guia de Carreira JAVA",
+      "categoria": "BACK END",
+      "imagem": "https://img.youtube.com/vi/TUBqH9zVs3M/maxresdefault.jpg",
+      "link": "https://www.youtube.com/watch?v=TUBqH9zVs3M",
+      "descricao": "4º ep. da temporada! Com o Guia de Carreira Java, saiba o que é e para que serve o Java e descubra o passo a passo para sair do INICIANTE ao AVANÇADO. Desde os fundamentos e a Orientação a Objetos (POO), passando por testes, pacotes e coleções, até mergulhos mais profundos nessa linguagem de programação que você vai se interessar, como: Spring Framework e Spring Boot, velocidade de Compilação, JVM, Maven, Padrões de Projeto, SOLID, SQL, Kafka, Microsserviços, JUnit, Mock, Git, GitHub e muito mais!"
+    },
+    {
+      "id": "p5sjmV0_Yto",
+      "titulo": "Guia de Carreira: Dev Full-Stack",
+      "categoria": "MOBILE",
+      "imagem": "https://img.youtube.com/vi/UrD_PIjNuEo/maxresdefault.jpg",
+      "link": "https://www.youtube.com/watch?v=p5sjmV0_Yto",
+      "descricao": "🤿 Descubra as possibilidades de estudos para se tornar Dev Full Stack com o apoio do Tech Guide da Alura."
+    },
+    {
+      "id": "iVNR-6v8lZU",
+      "titulo": "Métricas para o Front End com Mario Souto",
       "categoria": "FRONT END",
-      "imagem": "",
-      "link": "https://www.youtube.com/slmtdlWNwcE?si=WEsbgWhZHObbGO8t",
-      "descricao": "Vem com a gente conhecer mais sobre o Next.JS com o Alura+ \n\n A Vanessa Tonini, Instrutora daqui na Alura,  apresenta o framework NextJS, seu propósito e recursos. Além disso, vemos rapidamente como criar um projeto NextJS, subir no Github e publicar na Vercel. Curtiu? Então, vem com a gente!",
-      "id": "3",
-      "tagId": 1
-    },
-    {
-      "titulo": "Primeiros passos Next.js",
-      "categoria": "BACK END",
-      "imagem": "",
-      "link": "https://www.youtube.com/slmtdlWNwcE?si=WEsbgWhZHObbGO8t",
-      "descricao": "Vem com a gente conhecer mais sobre o Next.JS com o Alura+ \n\n A Vanessa Tonini, Instrutora daqui na Alura,  apresenta o framework NextJS, seu propósito e recursos. Além disso, vemos rapidamente como criar um projeto NextJS, subir no Github e publicar na Vercel. Curtiu? Então, vem com a gente!",
-      "id": "4",
-      "tagId": 2
-    },
-    {
-      "titulo": "Primeiros passos Next.js",
-      "categoria": "BACK END",
-      "imagem": "",
-      "link": "https://www.youtube.com/slmtdlWNwcE?si=WEsbgWhZHObbGO8t",
-      "descricao": "Vem com a gente conhecer mais sobre o Next.JS com o Alura+ \n\n A Vanessa Tonini, Instrutora daqui na Alura,  apresenta o framework NextJS, seu propósito e recursos. Além disso, vemos rapidamente como criar um projeto NextJS, subir no Github e publicar na Vercel. Curtiu? Então, vem com a gente!",
-      "id": "5",
-      "tagId": 2
-    },
-    {
-      "titulo": "Primeiros passos Next.js",
-      "categoria": "BACK END",
-      "imagem": "",
-      "link": "https://www.youtube.com/slmtdlWNwcE?si=WEsbgWhZHObbGO8t",
-      "descricao": "Vem com a gente conhecer mais sobre o Next.JS com o Alura+ \n\n A Vanessa Tonini, Instrutora daqui na Alura,  apresenta o framework NextJS, seu propósito e recursos. Além disso, vemos rapidamente como criar um projeto NextJS, subir no Github e publicar na Vercel. Curtiu? Então, vem com a gente!",
-      "id": "6",
-      "tagId": 2
-    },
-    {
-      "titulo": "Primeiros passos Next.js",
-      "categoria": "MOBILE",
-      "imagem": "",
-      "link": "https://www.youtube.com/slmtdlWNwcE?si=WEsbgWhZHObbGO8t",
-      "descricao": "Vem com a gente conhecer mais sobre o Next.JS com o Alura+ \n\n A Vanessa Tonini, Instrutora daqui na Alura,  apresenta o framework NextJS, seu propósito e recursos. Além disso, vemos rapidamente como criar um projeto NextJS, subir no Github e publicar na Vercel. Curtiu? Então, vem com a gente!",
-      "id": "7",
-      "tagId": 3
-    },
-    {
-      "titulo": "Primeiros passos Next.js",
-      "categoria": "MOBILE",
-      "imagem": "",
-      "link": "https://www.youtube.com/slmtdlWNwcE?si=WEsbgWhZHObbGO8t",
-      "descricao": "Vem com a gente conhecer mais sobre o Next.JS com o Alura+ \n\n A Vanessa Tonini, Instrutora daqui na Alura,  apresenta o framework NextJS, seu propósito e recursos. Além disso, vemos rapidamente como criar um projeto NextJS, subir no Github e publicar na Vercel. Curtiu? Então, vem com a gente!",
-      "id": "8",
-      "tagId": 3
-    },
-    {
-      "titulo": "Primeiros passos Next.js",
-      "categoria": "MOBILE",
-      "imagem": "",
-      "link": "https://www.youtube.com/slmtdlWNwcE?si=WEsbgWhZHObbGO8t",
-      "descricao": "Vem com a gente conhecer mais sobre o Next.JS com o Alura+ \n\n A Vanessa Tonini, Instrutora daqui na Alura,  apresenta o framework NextJS, seu propósito e recursos. Além disso, vemos rapidamente como criar um projeto NextJS, subir no Github e publicar na Vercel. Curtiu? Então, vem com a gente!",
-      "id": "9",
-      "tagId": 3
+      "imagem": "https://img.youtube.com/vi/iVNR-6v8lZU/maxresdefault.jpg",
+      "link": "https://www.youtube.com/watch?v=iVNR-6v8lZU",
+      "descricao": "Você sabe quais métricas são importantes no Front-End? 🤔\n\nNeste vídeo o Paulo Silveira e o ‪@DevSoutinho‬ batem um papo sobre as métricas que não podem ser esquecidas em um bom site. Se você tá começando a programar ou ainda não sabe quais métricas utilizar no dia a dia, confira o conteúdo e anota as dicas pra colocar em prática. E se você já tem utilizado no seu site métricas incríveis que impactam diretamente na performance, conta pra gente nos comentários, queremos saber 😉✌"
     }
   ]
 }
-  

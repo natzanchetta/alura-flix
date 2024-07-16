@@ -6,8 +6,9 @@ import { CategoriasContext } from "../../context/CategoriasContext";
 const FundoEstilizado = styled.section`
     height: 42rem;
     background-image: url(${props => props.imagem});
-    background-color: rgba(0, 0, 0, 0.7);
-    border: 4px solid ${props => props.cor};
+    background-size: cover;
+    border-bottom: 4px solid ${props => props.cor};
+    border-left: 4px solid ${props => props.cor};
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -45,48 +46,59 @@ const ParagrafoEstilizado = styled.p`
     line-height: 1.25;
 `
 
-const VideoEstilizado = styled.video`
+const ThumbnailEstilizada = styled.img`
     border: 3px solid ${props => props.cor};
     box-shadow: inset 2px 2px 8px ${props => props.cor}, inset -2px -2px 8px ${props => props.cor};
+    background-color: transparent;
     width: 100%;
     max-height: auto;
+    border-radius: 4px;
 `
 
-
 const Banner = () => {
-        const { categorias } = useContext(CategoriasContext)
-        const { videos } = useContext(VideosContext);
-        const [indiceAtual, setIndiceAtual] = useState(0);
-      
-        useEffect(() => {
-          const interval = setInterval(() => {
-            setIndiceAtual((indiceAnterior) => (indiceAnterior + 1) % videos.length);
-          }, 10000);
-      
-          return () => clearInterval(interval);
-        }, [videos]);
-      
-        if (!videos || videos.length === 0) {
-          return <div>Carregando...</div>;
-        }
-      
-        const videoAtual = videos[indiceAtual];
-        const categoria = categorias.find(categoria => categoria.nome === videoAtual.categoria);
-    
-    return (
-        <FundoEstilizado imagem={videoAtual.imagem} cor={categoria.cor}> 
-           <DivisaoEstilizada>
-            <ContainerTitulo cor={categoria.cor}>
-                <TituloCategoriaEstilizado>{videoAtual.categoria}</TituloCategoriaEstilizado>
-            </ContainerTitulo>
-            <TituloVideoEstilizado>{videoAtual.titulo}</TituloVideoEstilizado>
-            <ParagrafoEstilizado>{videoAtual.descricao}</ParagrafoEstilizado>
-           </DivisaoEstilizada>
-           <DivisaoEstilizada>
-            <VideoEstilizado src={videoAtual.link} cor={categoria.cor} controls loop muted />
-           </DivisaoEstilizada>
-        </FundoEstilizado>
-    )
+  const { categorias } = useContext(CategoriasContext);
+  const { videos } = useContext(VideosContext);
+
+  const [indiceAtual, setIndiceAtual] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndiceAtual((indiceAnterior) => (indiceAnterior + 1) % videos.length);
+    }, 10000);
+
+    return () => clearInterval(interval);
+  }, [videos]);
+
+  if (!videos || videos.length === 0 || !categorias || categorias.length === 0) {
+    return <div>Carregando...</div>;
+  }
+
+  const videoAtual = videos[indiceAtual];
+  if (!videoAtual) {
+    return <div>Carregando...</div>;
+  }
+
+  const categoria = categorias.find(categoria => categoria.nome === videoAtual.categoria);
+  if (!categoria) {
+    return <div>Carregando...</div>;
+  }
+
+  return (
+    <FundoEstilizado imagem={videoAtual.imagem} cor={categoria.cor}>
+      <DivisaoEstilizada>
+        <ContainerTitulo cor={categoria.cor}>
+          <TituloCategoriaEstilizado>{videoAtual.categoria}</TituloCategoriaEstilizado>
+        </ContainerTitulo>
+        <TituloVideoEstilizado>{videoAtual.titulo}</TituloVideoEstilizado>
+        <ParagrafoEstilizado>{videoAtual.descricao}</ParagrafoEstilizado>
+      </DivisaoEstilizada>
+      <DivisaoEstilizada>
+        <a href={videoAtual.link} target="_blank" rel="noopener noreferrer">
+          <ThumbnailEstilizada src={videoAtual.imagem} alt={videoAtual.titulo} cor={categoria.cor} />
+        </a>
+      </DivisaoEstilizada>
+    </FundoEstilizado>
+  );
 }
 
-export default Banner
+export default Banner;

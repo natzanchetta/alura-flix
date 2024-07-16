@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from 'react';
+import React, { createContext, useEffect, useState } from 'react';
 
 export const CategoriasContext = createContext();
 
@@ -6,11 +6,15 @@ export const CategoriasProvider = ({ children }) => {
     const [categorias, setCategorias] = useState([]);
 
     useEffect(() => {
-        setCategorias([
-        { nome: 'FRONT END', cor: '#6BD1FF' },
-        { nome: 'BACK END', cor: '#00C86F' },
-        { nome: 'MOBILE', cor: '#FFBA05' }
-        ]);
+      fetch('http://localhost:3000/categorias')
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then(data => setCategorias(data))
+        .catch(error => console.error('Erro ao buscar as categorias:', error));
     }, []);
 
     return (

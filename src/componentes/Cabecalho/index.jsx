@@ -10,7 +10,7 @@ const CabecalhoEstilizado = styled.header`
     align-items: center;
     padding: 0 50px 0 50px;
     border-bottom: 4px solid #2271D1;
-    box-shadow: 0 3px 8px #2271D1;
+    box-shadow: 3px 0 10px #2271D1;
 `
 
 const Cabecalho = () => {

@@ -7,7 +7,7 @@ import ModalEdicao from "../ModalEdicao"
 
 const SecaoEstilizada = styled.section`
     background-color: #262626;
-    padding: 20px 3.4vw 140px 3.4vw;
+    padding: 50px 3.4vw 140px 3.4vw;
     display: flex;
     flex-direction: column;
     gap: 95px;

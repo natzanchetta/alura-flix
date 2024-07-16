@@ -8,6 +8,7 @@ const Overlay = styled.div`
     right: 0;
     bottom: 0;
     left: 0;
+    z-index: 1;
 `
 
 const DialogEstilizado = styled.dialog`
@@ -20,6 +21,7 @@ const DialogEstilizado = styled.dialog`
     display: flex;
     flex-direction: column;
     top: 100%;
+    z-index: 2;
 `
 
 const BotaoFecharEstilizado = styled.button`

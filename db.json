@@ -88,6 +88,14 @@
       "imagem": "https://img.youtube.com/vi/iVNR-6v8lZU/maxresdefault.jpg",
       "link": "https://www.youtube.com/watch?v=iVNR-6v8lZU",
       "descricao": "Você sabe quais métricas são importantes no Front-End? 🤔\n\nNeste vídeo o Paulo Silveira e o ‪@DevSoutinho‬ batem um papo sobre as métricas que não podem ser esquecidas em um bom site. Se você tá começando a programar ou ainda não sabe quais métricas utilizar no dia a dia, confira o conteúdo e anota as dicas pra colocar em prática. E se você já tem utilizado no seu site métricas incríveis que impactam diretamente na performance, conta pra gente nos comentários, queremos saber 😉✌"
+    },
+    {
+      "id": "rXFfntEuIiM",
+      "titulo": "Banco de Dados MySQL com Narciso Junior",
+      "categoria": "BACK END",
+      "imagem": "https://img.youtube.com/vi/rXFfntEuIiM/maxresdefault.jpg",
+      "link": "https://www.youtube.com/watch?v=rXFfntEuIiM",
+      "descricao": "Vamos conversar sobre Banco de Dados com MySQL? \n\nMySQL é o banco de dados mais utilizado em plataformas de cloud e o segundo mais importante para indústria, para entender mais esta plataforma, recebemos Narciso Junior, que atua como LATAM Cloud Evangelist na Oracle e vai esclarecer mais sobre o assunto. "
     }
   ]
 }

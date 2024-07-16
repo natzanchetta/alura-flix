@@ -30,11 +30,13 @@ const TituloSecundario = styled.p`
 const DivisaoEstilizada = styled.div`
     width: 81.3%;
     flex-wrap: wrap;
+    margin-bottom: 4.4rem;
 `
 
 const TituloTerciario = styled.h3`
     font-family: SourceSansProSemibold;
     font-size: 2.25rem;
+    margin-bottom: 4rem;
 `
 
 const NovoVideo = () => {
@@ -47,7 +49,7 @@ const NovoVideo = () => {
                 </ContainerTitulosEstilizado>
                 <DivisaoEstilizada>
                     <TituloTerciario>Criar Card</TituloTerciario>
-                    <Formulario />
+                    <Formulario context="page" />
                 </DivisaoEstilizada>
             </SecaoEstilizada>
         </>

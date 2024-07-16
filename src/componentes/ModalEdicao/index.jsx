@@ -18,24 +18,32 @@ const DialogEstilizado = styled.dialog`
     border: 3px solid #6BD1FF;
     border-radius: 15px;
     display: flex;
-    top: 100%;
     flex-direction: column;
-    justify-content: center;
+    top: 100%;
 `
 
 const BotaoFecharEstilizado = styled.button`
     cursor: pointer;
-    width: 3.6vw;
+    width: 4.5vw;
     height: auto;
     background-color: #03122F;
     border: 0;
+    align-self: flex-end;
     img {
        width: 100%;
     }
 `
 
+const TituloEstilizado = styled.h1`
+    color: #2271D1;
+    font-family: RobotoBlack;
+    font-size: 3.75rem;
+    align-self: center;
+`
+
 const FormularioContainer = styled.div`
     width: 58.8%;
+    align-self: center;
 `
 
 const ModalEdicao = ({ videoParaEditar, aoFechar }) => {
@@ -44,14 +52,12 @@ const ModalEdicao = ({ videoParaEditar, aoFechar }) => {
         <>
             <Overlay open={!!videoParaEditar} onClick={aoFechar} />
             <DialogEstilizado open={!!videoParaEditar}>
-                <form method="dialog">
                     <BotaoFecharEstilizado onClick={aoFechar}>
                         <img src="/icones/fechar.png" alt="Icone de fechar" />
                     </BotaoFecharEstilizado>
-                </form>
-                <h1>EDITAR CARD:</h1>
+                <TituloEstilizado>EDITAR CARD:</TituloEstilizado>
                 <FormularioContainer>
-                    <Formulario videoParaEditar={videoParaEditar} aoFechar={aoFechar} />
+                    <Formulario videoParaEditar={videoParaEditar} aoFechar={aoFechar} context="modal" />
                 </FormularioContainer>
             </DialogEstilizado>
         </>

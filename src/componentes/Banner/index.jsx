@@ -4,21 +4,36 @@ import { VideosContext } from "../../context/VideosContext";
 import { CategoriasContext } from "../../context/CategoriasContext";
 
 const FundoEstilizado = styled.section`
+    position: relative;
     height: 42rem;
-    background-image: url(${props => props.imagem});
-    background-size: cover;
+    background-color: #000;
     border-bottom: 4px solid ${props => props.cor};
     border-left: 4px solid ${props => props.cor};
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: #F5F5F5;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(${props => props.imagem});
+        background-size: cover;
+        background-position: center;
+        opacity: 0.4;
+        z-index: 0;
+    }
 `
 const DivisaoEstilizada = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 15%;
     width: 44vw;
+    z-index: 1;
 `
 
 const ContainerTitulo = styled.div`

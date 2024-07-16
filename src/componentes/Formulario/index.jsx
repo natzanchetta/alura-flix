@@ -1,7 +1,7 @@
 import { useState, useContext, useEffect } from 'react';
 import { VideosContext } from '../../context/VideosContext';
 import { CategoriasContext } from '../../context/CategoriasContext';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const FormularioEstilizado = styled.form`
     display: flex;
@@ -26,22 +26,42 @@ const CampoContainer = styled.div`
         background-color: transparent;
         resize: none;
         color: #FFF;
+        padding-left: 7px;
+        option {
+          background-color: #333;
+          color: #FFF;
+        }
     }
 `
 const BotoesContainer = styled.div`
     width: 100%;
+    ${({ context }) => context === 'modal' && css`
+        display: flex;
+        justify-content: space-between;
+    `}
+    ${({ context }) => context === 'page' && css`
+        display: flex;    
+        gap: 30px;
+    `}
 `
 
 const BotaoEstilizado = styled.button`
     width: 180px;
     height: 54px;
+    border: 2px solid ${({ cor }) => cor || '#FFF'};
     border-radius: 15px;
+    font-family: SourceSansProBlack;
     color: #FFF;
     background-color: transparent;
     cursor: pointer;
+    ${({ context }) => context === 'modal' && css`
+        box-shadow: inset 2px 2px 8px #2271D1, inset -2px -2px 8px #2271D1;
+        color: #2271D1;
+        background-color: #000;
+    `}
 `
 
-const Formulario = ({ videoParaEditar, aoFechar }) => {
+const Formulario = ({ videoParaEditar, aoFechar, context = 'page' }) => {
   const { videos, setVideos } = useContext(VideosContext);
   const { categorias } = useContext(CategoriasContext);
   
@@ -170,7 +190,7 @@ const Formulario = ({ videoParaEditar, aoFechar }) => {
   };
 
     return (
-        <FormularioEstilizado onSubmit={handleSubmit}>
+        <FormularioEstilizado onSubmit={handleSubmit} context={context}>
             <CampoContainer>
                 <label>Título</label>
                 <input
@@ -223,9 +243,9 @@ const Formulario = ({ videoParaEditar, aoFechar }) => {
                 required
                 />
             </CampoContainer>
-            <BotoesContainer>
-                <BotaoEstilizado type="submit">{videoParaEditar ? 'Editar' : 'Adicionar'} </BotaoEstilizado>
-                <BotaoEstilizado type='reset' onClick={limparCampos}>Limpar</BotaoEstilizado>
+            <BotoesContainer context={context}>
+                <BotaoEstilizado type="submit" cor="#2271D1" context={context}>{videoParaEditar ? 'EDITAR' : 'ADICIONAR'} </BotaoEstilizado>
+                <BotaoEstilizado type='reset' cor="#FFF" onClick={limparCampos}>LIMPAR</BotaoEstilizado>
             </BotoesContainer>
         </FormularioEstilizado>
     )
